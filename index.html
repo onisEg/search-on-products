@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a point of sale entering order interface </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-3 \ ">        
+        <span class="input-group-text justify-content-center">serial / sku</span>
+      </div>
+      <div class="col-md-9 ps-0">
+        <div class="input-group mb-3 ">
+          <input id="serial" onkeyup="search(this.value)" type="text" class="form-control">
+        </div>
+      </div>
+    </div>
+    <!-- table  -->
+
+      <section class="content pb-3">
+
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-9 ps-0 d-flex">
+              <div class="card flex-fill">
+                
+                <table class="table table-sm table-striped my-0 ">
+                  <thead style="background:#1a3584; color: white;">
+                    <tr>
+                      <th style="max-width:50px;"></th>
+                      <th>in cart</th>
+                      <th class="text-center">cancel </th>
+                      <th class="text-center">price</th>
+                      <th class="text-center">quantity </th>
+                      <th class="text-center">total</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody class="text-dark " id="tbody">
+           
+                   
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        
+      </section>
+      <section>
+        <div class="row ">
+          <div class="col-md-3"></div>
+
+          <div class="col-md-9 ps-0">
+            <div class=" prife px-3 py-2">
+              <div class="cost ">
+                
+                
+                <h4>Total to pay : </h4>
+              </div>
+              <div class="numbers w-auto d-flex">
+                <h4> ₺ </h4>
+                <h4 class="mx-1" id="totalToPay">94.5 </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <div class="py-3"><button class="btn bg-primary float-end text-light">submit</button></div>
+    
+  </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+
+ td.text-center.text-gray{
+    color: #aaa !important;
+}
+
+/* prife  */
+.prife{
+
+    background: #1a3584;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+    border-radius: 5px;
+    
+}
+.prife span{
+    color: greenyellow;
+}
+.cost{
+    width: fit-content;
+    
+}
